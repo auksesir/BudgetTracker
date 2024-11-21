@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary color. -->
+        <item name="colorPrimary">@color/purple500_color</item>
+        <item name="colorPrimaryVariant">@color/purple700_color</item>
+        <item name="colorOnPrimary">@color/white_color</item>
+
+        <!-- Secondary color. -->
+        <item name="colorSecondary">@color/teal200_color</item>
+        <item name="colorSecondaryVariant">@color/teal700_color</item>
+        <item name="colorOnSecondary">@color/black_color</item>
+
+        <!-- Customize your theme here. -->
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+
+    </style>
+
+</resources>
+

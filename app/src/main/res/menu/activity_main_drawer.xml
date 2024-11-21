@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ExpenseListFragment"
+            android:title="@string/expense_listz" />
+        <item
+            android:id="@+id/AddExpenseFragment"
+            android:title="@string/add_expensez" />
+        <item
+            android:id="@+id/CategoryTotalsFragment"
+            android:title="@string/category_totalsz" />
+    </group>
+</menu>

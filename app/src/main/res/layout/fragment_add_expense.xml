@@ -1,0 +1,114 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="expenseViewModel"
+            type="viewmodel.ExpenseViewModel" />
+        <variable
+            name="dateViewModel"
+            type="viewmodel.DateViewModel" />
+        <variable
+            name="expense"
+            type="entities.Expense" />
+        <import type="android.content.Context" />
+        <import type="utils.BindingAdapters"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Title EditText -->
+        <EditText
+            android:id="@+id/titleEditText"
+            android:text="@{dateViewModel.expense.title}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:autofillHints=""
+            android:inputType="text"
+            android:hint="@string/enter_title"
+            app:expenseTitle="@{expense.title}"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/dark_gray"
+            android:background="@color/light_gray"
+            tools:ignore="LabelFor" />
+
+        <!-- Amount EditText -->
+        <EditText
+            android:id="@+id/amountEditText"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:autofillHints=""
+            android:inputType="numberDecimal"
+            android:hint="@string/enter_amount"
+            app:doubleValue="@{expense.amount}"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/dark_gray"
+            android:background="@color/light_gray"
+            tools:ignore="LabelFor" />
+
+        <!-- Date TextView -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:dateFormatted="@{expense.date}"
+            android:onClick="@{() -> dateViewModel.showDatePicker(context)}"
+            android:textColor="@color/black_color"
+            android:background="@color/light_gray"
+            android:gravity="center_vertical" />
+
+        <!-- Spinner -->
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/categories_array"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
+        <!-- Go Back Button -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_button_text"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
+
+    </LinearLayout>
+</layout>
+
+
+
+
+
+
+
+
+

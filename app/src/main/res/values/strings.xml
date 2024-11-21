@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BudgetTracker</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="category">Category</string>
+    <string name="save_button_text">Save</string>s
+    <string name="expense_list">Expense List</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="settings">Settings</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="fab_click_handler">onFabClicked</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="enter_task_name">Enter task name</string>
+    <string name="enter_title">Enter title</string>
+    <string name="back">Back</string>
+    <string name="titleEdit">Title</string>
+    <string name="amountEdit">Amount</string>
+    <string name="save">Save</string>
+    <string name="select_date">Select Date</string>
+    <string name="titleDetail">Title:</string>
+    <string name="amountDetail">Amount:</string>
+    <string name="dateDetail">Date:</string>
+    <string name="categoryDetail">Category:</string>
+    <string name="editDetail">Edit</string>
+    <string name="detailDelete">Delete</string>
+    <string name="expense_lista">Expense List</string>
+    <string name="add_expensea">Add Expense</string>
+    <string name="category_totalsa">Category Totals</string>
+    <string name="expense_listq">Expense List</string>
+    <string name="expense_listz">Expense List</string>
+    <string name="add_expensez">Add Expense</string>
+    <string name="category_totalsz">Category Totals</string>
+    <string name="no_data_available">No data available</string>
+
+
+</resources>

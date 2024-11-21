@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ExpenseListFragment">
+
+    <!-- ExpenseListFragment  -->
+    <fragment
+        android:id="@+id/ExpenseListFragment"
+        android:name="fragment.ExpenseListFragment"
+        android:label="ExpenseListFragment">
+        <action
+            android:id="@+id/actionExpenseListFragmentToExpenseDetailsFragment"
+            app:destination="@id/expenseDetailsFragment" />
+        <action
+            android:id="@+id/actionExpenseListFragmentToAddExpenseFragment"
+            app:destination="@id/AddExpenseFragment" />
+        <action
+            android:id="@+id/actionExpenseListFragmentToCategoryTotalsFragment"
+            app:destination="@id/CategoryTotalsFragment" />
+    </fragment>
+    <!-- ExpenseDetailsFragment  -->
+    <fragment
+        android:id="@+id/expenseDetailsFragment"
+        android:name="fragment.ExpenseDetailsFragment"
+        android:label="ExpenseDetailsFragment">
+        <argument
+            android:name="expenseId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/actionExpenseDetailsFragmentToEditExpensesFragment"
+            app:destination="@id/editExpensesFragment" />
+    </fragment>
+    <!-- AddExpenseFragment  -->
+    <fragment
+        android:id="@+id/AddExpenseFragment"
+        android:name="fragment.AddExpenseFragment"
+        android:label="AddExpenseFragment" />
+    <action
+        android:id="@+id/actionAddExpenseFragmentToExpenseListFragment"
+        app:destination="@id/ExpenseListFragment" />
+    <!-- CategoryTotalsFragment  -->
+    <fragment
+        android:id="@+id/CategoryTotalsFragment"
+        android:name="fragment.CategoryTotalsFragment"
+        android:label="CategoryTotalsFragment"
+         />
+    <!-- EditExpensesFragment  -->
+    <fragment
+        android:id="@+id/editExpensesFragment"
+        android:name="fragment.EditExpensesFragment"
+        android:label="EditExpensesFragment">
+        <argument
+            android:name="expenseId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
